@@ -55,183 +55,154 @@
         </section>
 
 
-      <section id="projetos">
+        <section id="projetos" aria-labelledby="titulo-projetos">
+            <h2 id="titulo-projetos">Projetos de Engenharia de Dados</h2>
+            <p>Da preparação das fontes à aplicação de consulta: quatro projetos com documentação,
+                testes automatizados e amostras fictícias.</p>
+            <p>Água e o aplicativo possuem código público. Esgoto e Obras continuam em
+                repositórios privados; os links exigem acesso autorizado. Os dados e sistemas internos
+                permanecem separados das demonstrações.</p>
 
-    <h2>Projetos</h2>
-
-    <article class="project-card">
-
-        <div class="project-header">
-            <span class="project-icon">🔎</span>
-
-            <div>
-                <h3>APP MAT SEARCH</h3>
-                <p class="project-subtitle">
-                    Aplicação para consulta de dados operacionais
-                </p>
-            </div>
-        </div>
-
-        <p>
-            Aplicação web desenvolvida para centralizar a consulta
-            de informações provenientes de diferentes bases de dados,
-            permitindo localizar registros por matrícula em uma única interface.
-        </p>
-
-        <h4>Stack</h4>
-
-        <div class="tags">
-            <span>Python</span>
-            <span>Pandas</span>
-            <span>SQLite</span>
-            <span>Streamlit</span>
-            <span>SQL</span>
-        </div>
-
-        <h4>O que demonstra</h4>
-
-        <ul class="project-list">
-            <li>Integração de diferentes bases de dados</li>
-            <li>Tratamento e normalização de dados</li>
-            <li>Persistência em banco SQL</li>
-            <li>Desenvolvimento de aplicação para usuários</li>
-        </ul>
-
-        <div class="project-links">
-
-            <a
-                href="https://github.com/Mateuscrudo/APP_MAT_SEARCH"
-                target="_blank"
-            >
-                💻 GitHub
-            </a>
-
-        </div>
-
-    </article>
-
-
-    <article class="project-card">
-
-        <div class="project-header">
-            <span class="project-icon">⚙️</span>
-
-            <div>
-                <h3>ETL Ligações WFM</h3>
-
-                <p class="project-subtitle">
-                    Pipeline de tratamento e consolidação de dados
-                </p>
-            </div>
-        </div>
-
-        <p>
-            Pipeline desenvolvido para processar, transformar e consolidar
-            dados provenientes de diferentes fontes operacionais,
-            preparando as informações para utilização em aplicações e consultas.
-        </p>
-
-        <h4>Stack</h4>
-
-        <div class="tags">
-            <span>Python</span>
-            <span>Pandas</span>
-            <span>ETL</span>
-            <span>SQLite</span>
-            <span>SQL</span>
-        </div>
-
-        <h4>O que demonstra</h4>
-
-        <ul class="project-list">
-            <li>Construção de pipelines ETL</li>
-            <li>Normalização de dados</li>
-            <li>Deduplicação de registros</li>
-            <li>Cruzamento de diferentes fontes</li>
-            <li>Armazenamento em banco de dados</li>
-        </ul>
-
-        <div class="project-links">
-
-            <a
-                href="https://github.com/Mateuscrudo/ETL_LIGACOES_WFM"
-                target="_blank"
-            >
-                💻 GitHub
-            </a>
-
-        </div>
-
-    </article>
-
-
-    <article class="project-card">
-
-        <div class="project-header">
-            <span class="project-icon">💧</span>
-
-            <div>
-                <h3>Automação de Base de Água</h3>
-
-                <p class="project-subtitle">
-                    Processamento e consulta de dados operacionais
-                </p>
-            </div>
-        </div>
-
-        <p>
-            Projeto de automação para transformar dados originalmente
-            armazenados em Excel em uma estrutura organizada e consultável
-            utilizando Python, SQLite e Streamlit.
-        </p>
-
-        <h4>Stack</h4>
-
-        <div class="tags">
-            <span>Python</span>
-            <span>Pandas</span>
-            <span>Excel</span>
-            <span>SQLite</span>
-            <span>Streamlit</span>
-        </div>
-
-        <h4>O que demonstra</h4>
-
-        <ul class="project-list">
-            <li>Automação de processos</li>
-            <li>Conversão de Excel para banco SQL</li>
-            <li>Tratamento de dados</li>
-            <li>Desenvolvimento de interface de consulta</li>
-        </ul>
-
-        <div class="project-links">
-
-            <a
-                href="https://github.com/Mateuscrudo/APP_MAT_SEARCH"
-                target="_blank"
-            >
-                💻 GitHub
-            </a>
-
-        </div>
-
-    </article>
-
-</section>
-
-                <p>
-                    <strong>Tecnologias:</strong>
-                    Python, Pandas, SQLite, Excel e Streamlit.
-                </p>
-
-                <a href="https://github.com/Mateuscrudo/APP_MAT_SEARCH"
-                   target="_blank">
-                    Ver projeto →
-                </a>
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="project-icon" aria-hidden="true">🚰</span>
+                    <div>
+                        <h3>ETL de Esgoto</h3>
+                        <p class="project-subtitle">Integração de Roteiro e AppDeep</p>
+                    </div>
+                </div>
+                <p>Consolida duas fontes Excel por matrícula, seleciona o cadastro mais recente e organiza visitas e links de fotos para consulta.</p>
+                <div class="tags" aria-label="Tecnologias e disponibilidade">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>SQLite</span>
+                    <span>Excel</span>
+                    <span>ETL</span>
+                    <span>Repositório privado</span>
+                </div>
+                <h4>O que demonstra</h4>
+                <ul class="project-list">
+                    <li>Regras de prioridade por data e hora, com exclusão de envios duplicados.</li>
+                    <li>Histórico de tentativas e fotos normalizadas em tabelas separadas.</li>
+                    <li>Excel e SQLite, com verificação de integridade antes de substituir o banco.</li>
+                </ul>
+                <h4>Validação com dados fictícios</h4>
+                <p>8 testes aprovados; execução completa com planilhas fictícias.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Mateuscrudo/ETL_DUPLA_ESGOTO_" target="_blank" rel="noopener noreferrer">
+                        GitHub · acesso restrito
+                    </a>
+                    <a href="https://github.com/Mateuscrudo/ETL_DUPLA_ESGOTO_/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+                        Documentação · acesso restrito
+                    </a>
+                </div>
             </article>
 
-        </section>
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="project-icon" aria-hidden="true">⚙️</span>
+                    <div>
+                        <h3>ETL de Obras / Ligações WFM</h3>
+                        <p class="project-subtitle">Consolidação, recuperação de matrícula e hidrômetros</p>
+                    </div>
+                </div>
+                <p>Consolida planilhas WFM e consulta controles para recuperar matrículas e identificar hidrômetros, preservando a rastreabilidade de arquivo e aba.</p>
+                <div class="tags" aria-label="Tecnologias e disponibilidade">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>SQL</span>
+                    <span>Regex</span>
+                    <span>SQLite</span>
+                    <span>Repositório privado</span>
+                </div>
+                <h4>O que demonstra</h4>
+                <ul class="project-list">
+                    <li>Recuperação de matrícula por notas, complemento, OS e endereço.</li>
+                    <li>Prioridade de hidrômetros: WFM, Comercial, Social e Cliente; conflitos permanecem identificados.</li>
+                    <li>Preservação de duplicatas de origem, data de execução e logs por etapa.</li>
+                </ul>
+                <h4>Validação com dados fictícios</h4>
+                <p>126 testes aprovados; amostras fictícias de WFM e controles.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Mateuscrudo/ETL_LIGACOES_WFM" target="_blank" rel="noopener noreferrer">
+                        GitHub · acesso restrito
+                    </a>
+                    <a href="https://github.com/Mateuscrudo/ETL_LIGACOES_WFM/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+                        Documentação · acesso restrito
+                    </a>
+                </div>
+            </article>
 
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="project-icon" aria-hidden="true">💧</span>
+                    <div>
+                        <h3>ETL de Água</h3>
+                        <p class="project-subtitle">Consolidação de BASE_AG e exportação AppDeep</p>
+                    </div>
+                </div>
+                <p>Integra duas fontes Excel em um cadastro por matrícula, com seleção por data e fallback de campos. Gera bases para consumo em aplicações de consulta.</p>
+                <div class="tags" aria-label="Tecnologias e disponibilidade">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>SQLite</span>
+                    <span>Excel</span>
+                    <span>ETL</span>
+                    <span>Código público</span>
+                </div>
+                <h4>O que demonstra</h4>
+                <ul class="project-list">
+                    <li>Contagem de visitas conforme a fonte, sem somar indevidamente os dois sistemas.</li>
+                    <li>Links de fotos reunidos por matrícula e rastreabilidade da origem do status.</li>
+                    <li>Configuração independente, dados fictícios e exportação para Excel e SQLite.</li>
+                </ul>
+                <h4>Validação com dados fictícios</h4>
+                <p>Teste de execução completa aprovado, com contagens, visitas e integridade SQLite.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Mateuscrudo/ETL_AGUA" target="_blank" rel="noopener noreferrer">
+                        Ver código no GitHub
+                    </a>
+                    <a href="https://github.com/Mateuscrudo/ETL_AGUA/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+                        Documentação
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-header">
+                    <span class="project-icon" aria-hidden="true">🔎</span>
+                    <div>
+                        <h3>APP Pesquisa Fictício</h3>
+                        <p class="project-subtitle">Aplicação de consulta com dados sintéticos</p>
+                    </div>
+                </div>
+                <p>Demonstração em Streamlit para pesquisar matrícula, endereço ou nome e consultar Água, Esgoto e Obra em uma única interface.</p>
+                <div class="tags" aria-label="Tecnologias e disponibilidade">
+                    <span>Python</span>
+                    <span>Streamlit</span>
+                    <span>Pandas</span>
+                    <span>SQLite</span>
+                    <span>Pillow</span>
+                    <span>Código público</span>
+                </div>
+                <h4>O que demonstra</h4>
+                <ul class="project-list">
+                    <li>Quatro bancos sintéticos, histórico de visitas e desenhos locais no lugar de fotos reais.</li>
+                    <li>Cards para download em PNG e navegação entre consulta, histórico e imagens.</li>
+                    <li>Geocodificação desativada e nenhuma conexão com bancos ou galerias internas.</li>
+                </ul>
+                <h4>Validação com dados fictícios</h4>
+                <p>3 testes aprovados, incluindo consultas, cards e navegação com AppTest.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Mateuscrudo/APP_PESQUISA_FICTICIO" target="_blank" rel="noopener noreferrer">
+                        Ver código no GitHub
+                    </a>
+                    <a href="https://github.com/Mateuscrudo/APP_PESQUISA_FICTICIO/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+                        Documentação
+                    </a>
+                </div>
+            </article>
+        </section>
 
         <section id="tecnologias">
 
